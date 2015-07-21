@@ -3,4 +3,6 @@
 
 ### 1. Color Maker with Slider
 
+ [Project Link](My\ Projects/ColorMakerWithSlider/)
 
+![image](Screenshots/ColorMakerWithSlider.png)
