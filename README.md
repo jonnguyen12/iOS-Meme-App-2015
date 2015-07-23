@@ -12,3 +12,9 @@
  [Project Link](My\ Projects/RockPaperScissors/)
 
 ![image](Screenshots/RockPaperScissors.png)
+
+### 3. Text Field Challenge
+
+ [Project Link](My\ Projects/TextFieldChallengeApp/)
+
+![image](Screenshots/TextFieldChallenge.png)
