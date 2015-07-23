@@ -6,3 +6,9 @@
  [Project Link](My\ Projects/ColorMakerWithSlider/)
 
 ![image](Screenshots/ColorMakerWithSlider.png)
+
+### 2. Rock Paper Scissors
+
+ [Project Link](My\ Projects/RockPaperScissors/)
+
+![image](Screenshots/RockPaperScissors.png)
