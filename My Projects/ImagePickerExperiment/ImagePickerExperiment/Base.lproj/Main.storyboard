@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ImagePickerExperiment" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vbg-bP-gAU">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem title="Pick" id="4MU-Kx-nVe">
+                                        <connections>
+                                            <action selector="pickImage:" destination="BYZ-38-t0r" id="U14-67-YB0"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="camera" id="hKM-eQ-jS5">
+                                        <connections>
+                                            <action selector="pickImageFromCamera:" destination="BYZ-38-t0r" id="PgZ-yv-Wl0"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6Tb-0H-PrZ">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="556"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6Tb-0H-PrZ" firstAttribute="leading" secondItem="Vbg-bP-gAU" secondAttribute="leading" id="Igc-ZC-93N"/>
+                            <constraint firstItem="6Tb-0H-PrZ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="R7H-Be-aLv"/>
+                            <constraint firstItem="Vbg-bP-gAU" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="WNZ-mW-SXj"/>
+                            <constraint firstItem="Vbg-bP-gAU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Y4R-Cl-MWt"/>
+                            <constraint firstItem="6Tb-0H-PrZ" firstAttribute="trailing" secondItem="Vbg-bP-gAU" secondAttribute="trailing" id="cNS-RS-1UM"/>
+                            <constraint firstItem="6Tb-0H-PrZ" firstAttribute="bottom" secondItem="Vbg-bP-gAU" secondAttribute="top" id="npg-uo-gQ7"/>
+                            <constraint firstAttribute="trailing" secondItem="Vbg-bP-gAU" secondAttribute="trailing" id="yxE-E7-niW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cameraButton" destination="hKM-eQ-jS5" id="cqf-qV-wsD"/>
+                        <outlet property="imageView" destination="6Tb-0H-PrZ" id="7bk-c7-vlc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

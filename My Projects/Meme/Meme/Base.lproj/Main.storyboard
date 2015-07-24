@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="O9W-U8-0ne">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="3bp-nJ-6na">
+            <objects>
+                <viewController id="O9W-U8-0ne" customClass="ViewController" customModule="Meme" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Kbt-E0-iAP"/>
+                        <viewControllerLayoutGuide type="bottom" id="cFd-ES-4Tt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KQb-gk-cQQ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ufg-Xk-8E1">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem title="Pick" id="FU3-UP-Wn9">
+                                        <connections>
+                                            <action selector="pickImage:" destination="O9W-U8-0ne" id="pt5-ur-j2O"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="camera" id="ps2-8Z-P1H">
+                                        <connections>
+                                            <action selector="pickImageFromCamera:" destination="O9W-U8-0ne" id="NmW-v8-TXG"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sa6-UK-9bK">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="556"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="TOP" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9DM-Bd-sOG">
+                                <rect key="frame" x="272" y="28" width="57" height="43"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
+                                <connections>
+                                    <outlet property="delegate" destination="O9W-U8-0ne" id="qTk-cs-CrR"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="BOTTOM" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b9E-Tw-ZJy">
+                                <rect key="frame" x="252" y="468" width="96" height="43"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
+                                <connections>
+                                    <outlet property="delegate" destination="O9W-U8-0ne" id="Yxh-rm-lwW"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9DM-Bd-sOG" firstAttribute="top" secondItem="Kbt-E0-iAP" secondAttribute="bottom" constant="8" symbolic="YES" id="BXQ-tD-7wE"/>
+                            <constraint firstItem="sa6-UK-9bK" firstAttribute="top" secondItem="KQb-gk-cQQ" secondAttribute="top" id="Cdc-Zp-Ap6"/>
+                            <constraint firstItem="Ufg-Xk-8E1" firstAttribute="top" secondItem="b9E-Tw-ZJy" secondAttribute="bottom" constant="45" id="GNN-6g-svX"/>
+                            <constraint firstItem="Ufg-Xk-8E1" firstAttribute="leading" secondItem="KQb-gk-cQQ" secondAttribute="leading" id="Gal-5P-J1e"/>
+                            <constraint firstItem="9DM-Bd-sOG" firstAttribute="centerX" secondItem="b9E-Tw-ZJy" secondAttribute="centerX" id="JCC-tk-QsQ"/>
+                            <constraint firstItem="sa6-UK-9bK" firstAttribute="bottom" secondItem="Ufg-Xk-8E1" secondAttribute="top" id="KdO-Xb-dFd"/>
+                            <constraint firstAttribute="trailing" secondItem="Ufg-Xk-8E1" secondAttribute="trailing" id="LcY-wF-URA"/>
+                            <constraint firstItem="Ufg-Xk-8E1" firstAttribute="bottom" secondItem="cFd-ES-4Tt" secondAttribute="top" id="VOU-c5-t8R"/>
+                            <constraint firstItem="sa6-UK-9bK" firstAttribute="leading" secondItem="Ufg-Xk-8E1" secondAttribute="leading" id="XqZ-s9-Zh3"/>
+                            <constraint firstItem="b9E-Tw-ZJy" firstAttribute="centerX" secondItem="Ufg-Xk-8E1" secondAttribute="centerX" id="rcb-oE-mZM"/>
+                            <constraint firstItem="sa6-UK-9bK" firstAttribute="trailing" secondItem="Ufg-Xk-8E1" secondAttribute="trailing" id="sPW-Ff-rkC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bottomTextField" destination="b9E-Tw-ZJy" id="iQi-Fk-gs1"/>
+                        <outlet property="cameraButton" destination="ps2-8Z-P1H" id="oEO-gS-2kg"/>
+                        <outlet property="imageView" destination="sa6-UK-9bK" id="Oxi-Ge-GnZ"/>
+                        <outlet property="topTextField" destination="9DM-Bd-sOG" id="hfH-4a-zZ8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Gd-sa-gJb" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
