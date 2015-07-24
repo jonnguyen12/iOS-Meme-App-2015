@@ -5,28 +5,28 @@
 
  [Project Link](My\ Projects/ColorMakerWithSlider/)
 
-![image | width=338px](Screenshots/ColorMakerWithSlider.png)
+![image](Screenshots/ColorMakerWithSlider.png)
 
 ### 2. Rock Paper Scissors
 
  [Project Link](My\ Projects/RockPaperScissors/)
 
-![image](Screenshots/RockPaperScissors.png =338x568)
+![image](Screenshots/RockPaperScissors.png)
 
 ### 3. Text Field Challenge
 
  [Project Link](My\ Projects/TextFieldChallengeApp/)
 
-![image](Screenshots/TextFieldChallenge.png =338x568)
+![image](Screenshots/TextFieldChallenge.png)
 
 ### 4. Rock Paper Scissors with History
 
  [Project Link](My\ Projects/RoshamboWithHistory/)
 
-![image](Screenshots/RockPaperScissorsWithHistory.gif =338x568)
+![image](Screenshots/RockPaperScissorsWithHistory.gif)
 
 ### 4. Adventures
 
  [Project Link](My\ Projects/MYOA-Data-Driven/)
 
-![image](Screenshots/Adventures.gif =338x568)
+![image](Screenshots/Adventures.gif)
