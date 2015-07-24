@@ -1,4 +1,4 @@
-s# App Screenshot
+# App Screenshot
 
 ![image](../../Screenshots/RockPaperScissors.png)
 
