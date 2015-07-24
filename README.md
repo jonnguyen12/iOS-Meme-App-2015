@@ -5,7 +5,7 @@
 
  [Project Link](My\ Projects/ColorMakerWithSlider/)
 
-![image](Screenshots/ColorMakerWithSlider.png =338x568)
+![image[width=338px]](Screenshots/ColorMakerWithSlider.png)
 
 ### 2. Rock Paper Scissors
 
