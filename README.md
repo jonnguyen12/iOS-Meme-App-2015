@@ -1,5 +1,4 @@
-# Udacity iOS UIKit Fundamentals Summer 2015
-## Some apps I made in this course
+# A few simple iOS Apps I made in Summer 2015
 
 ## FINAL PROJECT - MEME APP
 [Project Link](My\ Projects/Meme/)
